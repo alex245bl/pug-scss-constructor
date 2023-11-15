@@ -1,0 +1,18 @@
+- var template_name = "mayak";
+
+include includes/mixins
+
+doctype html
+html(lang="ru")
+    head
+        meta(charset='utf-8')
+        meta(name="viewport" content="width=device-width, initial-scale=1.0")
+
+        link(href="/local/templates/" + template_name + "/styles.css" rel="stylesheet")
+        link(href="/local/templates/" + template_name + "/template_styles.css" rel="stylesheet")
+
+        script(type="text/javascript" src="/local/templates/" + template_name + "/js/script.js")
+    body
+        include header
+        block content
+        include footer
